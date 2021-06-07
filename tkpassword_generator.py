@@ -1,4 +1,4 @@
-####password generator####
+####password generator with tkinter####
 
 import random as r
 import string as s
@@ -34,7 +34,7 @@ entry1 = tk.Entry(root, bd=4, width=2)
 entry1.config(font=("helvetica", 16))
 canvas1.create_window(200, 160, window=entry1)
 
-
+###Find your password###
 def run():
     x1 = entry1.get()
     all = s.ascii_lowercase + s.ascii_uppercase + s.digits + s.punctuation
@@ -48,7 +48,7 @@ def run():
     canvas1.create_window(200, 270, window=label3)
     label3.configure(bg="white")
 
-
+###Exit or not the application###
 def exit():
     MsgBox = tk.messagebox.askquestion(
         "Exit Application",
